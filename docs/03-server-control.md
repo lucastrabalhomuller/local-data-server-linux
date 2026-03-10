@@ -1,4 +1,4 @@
-# Step 2 - Server Control Script
+# Step 3 - Server Control Script
 
 This step creates the main script responsible for controlling the Samba server.
 
