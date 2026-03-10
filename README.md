@@ -59,9 +59,10 @@ Each file contains comments explaining its role in the system.
 Recommended reading order:
 
 1. Server configuration (Samba configuration)
-2. Service control scripts
-3. Graphical control scripts
-4. Desktop application files
+2. Server script
+3. Service control scripts
+4. Graphical control scripts
+5. Desktop application files
 
 Following the files in this order helps understand how the server is configured, how the service is controlled, and how the graphical utilities interact with the system.
 
