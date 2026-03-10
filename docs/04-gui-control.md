@@ -1,4 +1,4 @@
-# Step 3 - Graphical Control
+# Step 4 - Graphical Control
 
 A graphical interface script is used to control the server.
 
