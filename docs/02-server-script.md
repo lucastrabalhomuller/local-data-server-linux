@@ -38,3 +38,48 @@ Set permissions:
 ```
 sudo chmod 755 /mnt/storage
 ```
+## Create the server setup script
+
+Create a script that will configure the storage server automatically.
+
+```
+sudo nano /usr/local/bin/server-setup
+```
+
+Paste the following code:
+
+```bash
+#!/bin/bash
+
+SERVER_DIR="/mnt/storage"
+SERVER_USER="storage"
+SHARE_NAME="data"
+
+# Create directory
+mkdir -p "$SERVER_DIR"
+chmod 755 "$SERVER_DIR"
+
+# Create server user
+id "$SERVER_USER" &>/dev/null || useradd -M -s /usr/sbin/nologin "$SERVER_USER"
+
+# Configure Samba share
+if ! grep -qF "[$SHARE_NAME]" /etc/samba/smb.conf; then
+echo "
+[$SHARE_NAME]
+path = $SERVER_DIR
+browseable = yes
+read only = no
+guest ok = no
+" >> /etc/samba/smb.conf
+fi
+
+systemctl restart smbd
+
+echo "Storage server created successfully."
+```
+
+Make the script executable:
+
+```
+sudo chmod +x /usr/local/bin/server-setup
+```
