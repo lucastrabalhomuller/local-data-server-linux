@@ -23,7 +23,8 @@ sudo nano /usr/share/applications/server-control.desktop
 ```
 
 Paste:
-`[Desktop Entry]
+```
+[Desktop Entry]
 Name=Storage Server Control
 Exec=/usr/local/bin/server-ui
 Icon=network-server
