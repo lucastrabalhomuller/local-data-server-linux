@@ -5,6 +5,7 @@ In the Terminal:
 ip a
 ```
 Now, on the computer you want to access, you must use two commands in the Terminal.
+
 First Command:
 ```
 smbclient -L [Ip Addres] -U%
