@@ -26,7 +26,7 @@ Paste:
 ```
 [Desktop Entry]
 Name=Storage Server Control
-Exec=/usr/local/bin/server-ui
+Exec=/usr/local/bin/server-script
 Icon=network-server
 Terminal=false
 Type=Application
@@ -49,7 +49,7 @@ Paste:
 ```
 [Desktop Entry]
 Name=Storage Server Status
-Exec=/usr/local/bin/server-status
+Exec=/usr/local/bin/server-setup
 Icon=network-workgroup
 Terminal=false
 Type=Application
