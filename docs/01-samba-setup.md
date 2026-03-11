@@ -11,6 +11,7 @@ sudo apt install samba
 ```
 sudo nano /etc/samba/smb.conf
 ```
+Place the configuration at the end of the file.
 
 Example configuration:
 ```
