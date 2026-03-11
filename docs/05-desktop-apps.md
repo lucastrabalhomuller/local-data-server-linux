@@ -26,7 +26,7 @@ Paste:
 ```
 [Desktop Entry]
 Name=Storage Server Control
-Exec=/usr/local/bin/server-script
+Exec=/usr/local/bin/server-status
 Icon=network-server
 Terminal=false
 Type=Application
