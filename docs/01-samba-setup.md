@@ -22,6 +22,11 @@ browseable = yes
 read only = no
 guest ok = no
 ```
+add a user to samba:
+```
+sudo smbpasswd -a user
+```
+He will ask for a password.
  
 ## Restart the service
 ```
