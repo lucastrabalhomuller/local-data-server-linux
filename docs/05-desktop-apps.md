@@ -69,7 +69,7 @@ Paste:
 ```
 [Desktop Entry]
 Name=Storage Server Status
-Exec=/usr/local/bin/server-setup
+Exec=sh -c /usr/local/bin/server-status
 Icon=network-workgroup
 Terminal=false
 Type=Application
