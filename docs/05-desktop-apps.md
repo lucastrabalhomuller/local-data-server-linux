@@ -39,6 +39,26 @@ Save the file.
 ---
 
 # Server Status App
+Create a command for the status:
+```
+sudo nano /usr/local/bin/server-status
+```
+Paste:
+```
+#!/bin/bash
+
+STATUS="$(/usr/bin/systemctl is-active smbd 2>/dev/null || true)"
+
+if [ "$STATUS" = "active" ]; then
+  /usr/bin/zenity --info \
+  --title="Storage Server" \
+  --text="🟢 Server ACTIVE"
+else
+  /usr/bin/zenity --warning \
+  --title="Storage Server" \
+  --text="🔴 Server STOPPED"
+fi
+```
 
 Create the server status application:
 ```
