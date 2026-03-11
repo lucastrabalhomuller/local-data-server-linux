@@ -30,7 +30,7 @@ Exec=/usr/local/bin/server-ui
 Icon=network-server
 Terminal=false
 Type=Application
-Categories=System;``
+Categories=System;
 
 ```
 
